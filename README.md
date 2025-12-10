@@ -1,16 +1,63 @@
-# React + Vite
+# SUNAMAI – AI Image Generating Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React project that generates AI images using user prompts through the Pollination API.  
+This project is built to practice and understand advanced React concepts like data fetching, refs, routing (state based), custom hooks, and context.
 
-Currently, two official plugins are available:
+## Learning From This Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Using **useEffect** for data fetching  
+- Creating **custom hooks** that handle data, error, and loading states  
+- Building a **Context Provider** to manage global state  
+- Using **React Router** with state  
+- Organizing components and hooks for clean folder structure  
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- AI image generation using Pollination API  
+- Custom hooks for API requests  
+- Global state management with Context  
+- Routing with shared state between pages  
+- Reusable and clean component layout  
+- Error and loading handling built into custom hooks  
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React  
+- Context API  
+- Custom Hooks  
+- Pollination API  
+- Tailwind 
+
+## Installation
+
+1. Clone the repository:
+
+```
+git clone https://github.com/sunam-ali/4-SunamAI.git
+```
+
+2. Navigate into the project folder:
+
+```
+cd 4-SunamAI
+```
+
+3. Install dependencies:
+
+```
+npm install
+```
+
+4. Start the development server:
+
+```
+npm run dev
+```
+
+## How It Works
+
+1. The user enters a text prompt  
+2. A custom hook sends the request to the Pollination API  
+3. The hook manages loading and error states  
+4. The image is displayed once generated  
+5. Global state is used to share data across components and routes  
