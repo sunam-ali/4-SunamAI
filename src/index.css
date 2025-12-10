@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Satoshi", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a0b2e 100%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: -25%;
+  right: 0;
+  width: 24rem;
+  height: 24rem;
+  background: hsl(175, 80%, 50%);
+  opacity: 0.35;
+  border-radius: 50%;
+  filter: blur(180px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.search-input:focus {
+  outline: none;
+}
